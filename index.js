@@ -7,7 +7,6 @@ const app = express();
 const port = 3001;
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static("public"));
 app.use(cors());
 
 app.get("/", (req, res) => {
